@@ -27,7 +27,7 @@ class LRUCache(BasicCache):
                 print("DISCARD: {}".format(old_key))
         self._keys.append(key)
         self.cache_data[key] = item
-    
+
     def get(self, key):
         """Returns cache value at specified key"""
         if not key or key not in self.cache_data:

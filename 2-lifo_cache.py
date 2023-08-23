@@ -21,7 +21,7 @@ class LIFOCache(BasicCache):
                 last_key, cache_val = self.cache_data.popitem()
                 print("DISCARD: {}".format(last_key))
             self.cache_data[key] = item
-    
+
     def get(self, key):
         """Returns cache value at specified key"""
         return self.cache_data.get(key, None)

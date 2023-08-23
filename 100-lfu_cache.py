@@ -28,7 +28,7 @@ class LFUCache(BasicCache):
             print("DISCARD: {}".format(lfu_key))
         self.cache_data[key] = item
         self.freq[key] = self.freq.get(key, 0) + 1
-    
+
     def get(self, key):
         """Returns cache value at specified key"""
         if key in self.cache_data:

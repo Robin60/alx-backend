@@ -22,7 +22,7 @@ class FIFOCache(BasicCache):
             first_key = keys[0]
             self.cache_data.pop(first_key)
             print("DISCARD: {}".format(first_key))
-    
+
     def get(self, key):
         """Returns cache value at specified key"""
         return self.cache_data.get(key, None)
